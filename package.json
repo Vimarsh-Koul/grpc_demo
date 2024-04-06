@@ -1,0 +1,23 @@
+{
+  "name": "grpc_logrocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-recipe-ms": "node ./recipe/main.js",
+    "start-processor-ms": "node ./processor/main.js",
+    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "@grpc/proto-loader": "^0.7.12",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
